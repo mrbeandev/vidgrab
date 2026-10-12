@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.npm-cache/
+chromium/
+.smoke-out/
+*.zip
+*.crx
+*.pem
+.DS_Store

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VidGrab – Downloads</title>
+    <link rel="stylesheet" href="/src/shared/theme.css" />
+    <link rel="stylesheet" href="/src/sidepanel/sidepanel.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="brand"><span class="logo">▼</span> VidGrab</div>
+        <nav class="tabs">
+          <button data-view="downloads" class="tab active">Downloads <span id="active-count" class="badge" hidden></span></button>
+          <button data-view="settings" class="tab">Settings</button>
+        </nav>
+        <div class="spacer"></div>
+        <button id="btn-clear-done" class="icon-btn" title="Clear finished"></button>
+      </header>
+      <section id="view-downloads" class="view active">
+        <div id="summary" class="summary" hidden></div>
+        <div id="storage" class="storage"></div>
+        <div id="jobs" class="jobs"></div>
+      </section>
+      <section id="view-settings" class="view"></section>
+    </div>
+    <script type="module" src="/src/sidepanel/index.ts"></script>
+  </body>
+</html>

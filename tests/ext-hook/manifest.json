@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"hook-test","version":"1","permissions":["downloads"],"background":{"service_worker":"sw.js"}}

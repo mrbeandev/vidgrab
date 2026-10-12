@@ -1,0 +1,40 @@
+{
+  "name": "vidgrab",
+  "version": "1.0.0",
+  "description": "Private, self-contained video downloader extension for Chrome — HLS/m3u8, MP4, WebM and audio, merged into a single MP4.",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "node scripts/make-icons.mjs && tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "name-check": "node scripts/name-check.mjs",
+    "test": "node --experimental-strip-types --no-warnings --test \"tests/**/*.test.mjs\""
+  },
+  "author": "mrbeandev",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/chrome": "^0.3.5",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.4"
+  },
+  "dependencies": {
+    "hls.js": "^1.7.3",
+    "mux.js": "^7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbeandev/vidgrab.git"
+  },
+  "homepage": "https://github.com/mrbeandev/vidgrab#readme",
+  "bugs": {
+    "url": "https://github.com/mrbeandev/vidgrab/issues"
+  },
+  "private": true,
+  "keywords": [
+    "chrome-extension",
+    "video-downloader",
+    "hls",
+    "m3u8"
+  ]
+}

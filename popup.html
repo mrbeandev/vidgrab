@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VidGrab</title>
+    <link rel="stylesheet" href="/src/shared/theme.css" />
+    <link rel="stylesheet" href="/src/popup/popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="brand"><span class="logo">▼</span> VidGrab</div>
+        <span id="count" class="chip" hidden></span>
+        <div class="spacer"></div>
+        <button id="btn-panel" class="icon-btn" title="Open download manager"></button>
+        <button id="btn-clear" class="icon-btn danger" title="Clear detected list"></button>
+        <button id="btn-settings" class="icon-btn" title="Settings"></button>
+      </header>
+      <main id="main"></main>
+      <footer id="footer" class="footer" hidden>
+        <label class="check"><input type="checkbox" id="select-all" /> <span>Select all</span></label>
+        <div class="spacer"></div>
+        <button id="btn-download-selected" class="btn primary" disabled></button>
+      </footer>
+    </div>
+    <script type="module" src="/src/popup/index.ts"></script>
+  </body>
+</html>

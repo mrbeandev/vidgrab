@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "VidGrab \u2013 Video Downloader (HLS / m3u8 / MP4)",
+  "short_name": "VidGrab",
+  "version": "1.0.0",
+  "description": "Private, self-contained video downloader. Detects HLS/m3u8, MP4, WebM, MKV and audio on any page and saves them straight to disk. No external servers, no ads, no tracking.",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "VidGrab",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "declarativeNetRequest",
+    "offscreen",
+    "sidePanel",
+    "downloads",
+    "unlimitedStorage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [],
+  "homepage_url": "https://github.com/mrbeandev/vidgrab"
+}
